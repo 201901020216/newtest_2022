@@ -116,19 +116,19 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">unittest报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> 201901020216 陈彬彬同学</p>
-<p class='attribute'><strong>开始时间 : </strong> 2022-04-23 18:29:11</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.054441</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 2，通过 1，失败 1，通过率= 50.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2022-04-25 10:53:43</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.821870</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 3，通过 3，通过率= 100.00%</p>
 
-<p class='description'>html测试</p>
+<p class='description'>html测试:删除数据</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 50.00% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 1 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 1 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 2 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 3 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 3 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -148,55 +148,37 @@ function html_escape(s) {
     <td>详细</td>
 </tr>
 
-<tr class='failClass warning'>
-    <td>test_case.test_update.Update</td>
-    <td class="text-center">2</td>
-    <td class="text-center">1</td>
-    <td class="text-center">1</td>
+<tr class='passClass warning'>
+    <td>test_case.test_delete.Delete</td>
+    <td class="text-center">3</td>
+    <td class="text-center">3</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',2)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',3)" class="detail" id='c1'>详细</a></td>
 </tr>
 
-<tr id='ft1_1' class='none'>
-    <td class='failCase'><div class='testcase'>test_add_success</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_1'>失败</button>
-    <div id='div_ft1_1' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-     
-    <!--原来的button，样式写死了，没用变量
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>失败</button>
-    -->
-     
-    <button id='btn_ft1_1' type="button"  class="btn btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>失败</button>
- 
-    <div id='div_ft1_1' class="collapse in" align="left">
-    <pre>
-    
-ft1_1: Traceback (most recent call last):
-  File "D:\PycharmProjects\201901020216_陈彬彬\test_case\test_update.py", line 25, in test_add_success
-    self.assertEqual(self.result["code"], 200)
-AssertionError: 10004 != 200
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_delete_get_id_null</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='pt1_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_update_params_null</div></td>
+    <td class='passCase'><div class='testcase'>test_delete_get_id_value_error</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_delete_success</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>2</td>
-    <td>1</td>
-    <td>1</td>
+    <td>3</td>
+    <td>3</td>
     <td>0</td>
-    <td>通过率：50.00%</td>
+    <td>0</td>
+    <td>通过率：100.00%</td>
 </tr>
 </table>
 

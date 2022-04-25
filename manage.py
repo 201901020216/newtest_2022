@@ -1,10 +1,13 @@
 # coding=utf-8
+import sys
 from flask import Flask, render_template
 import pymysql
 from flask import request
 import json
 
 app = Flask(__name__)
+
+sys.path.append("D:\\Users\\15019\\AppData\\Local\\Programs\\Python\\Python37\\Lib\\site-packages")
 
 
 @app.route('/', methods=['GET', 'POST'])
